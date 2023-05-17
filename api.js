@@ -12,6 +12,7 @@ var container = document.getElementById("table");
 fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDays=6&resultsMax=40&resultsOffset=0", requestOptions)
   .then(response => response.json())
   .then(data => {
+  console.log(data);
     var headers = ["Horse", "Race Course", "Race Details", "Race Date", "Race Time"];
     var columnWidths = ["is-width-medium", "is-width-large", "is-width-xlarge", "is-width-medium", "is-width-medium"];
 
