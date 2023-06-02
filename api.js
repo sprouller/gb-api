@@ -13,23 +13,9 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
   .then(response => response.json())
   .then(data => {
   console.log(data);
-    var headers = ["Horse", "Race Course", "Race Details", "Race Date", "Race Time"];
-    var columnWidths = ["is-width-medium", "is-width-large", "is-width-xlarge", "is-width-medium", "is-width-medium"];
 
     var table = document.createElement("div");
     table.classList.add("table2_list");
-
-    var headerRow = document.createElement("div");
-    headerRow.classList.add("table2_header-row");
-
-    for (var i = 0; i < headers.length; i++) {
-      var headerCell = document.createElement("div");
-      headerCell.classList.add("table2_column", "is-header-column", columnWidths[i]);
-      headerCell.textContent = headers[i];
-      headerRow.appendChild(headerCell);
-    }
-
-    table.appendChild(headerRow);
 
     data.entries.forEach(entry => {
       var rowDiv = document.createElement("div");
