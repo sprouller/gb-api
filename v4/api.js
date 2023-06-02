@@ -15,7 +15,7 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
   console.log(data);
 
     var table = document.createElement("div");
-    table.classList.add("table2_list");
+    table.classList.add("api-table_list");
 
     data.entries.forEach(entry => {
 
