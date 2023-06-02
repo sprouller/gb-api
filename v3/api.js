@@ -22,6 +22,11 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
       var rowDiv = document.createElement("div");
       rowDiv.classList.add("table2_item");
 
+      if (entry.declared === "true") {
+        // Entry is declared, set background color
+        rowDiv.style.backgroundColor = "#f4f4f4";
+      }
+
       var horseCell = document.createElement("div");
       horseCell.classList.add("table2_column", "is-width-medium", "text-weight-semibold");
       horseCell.textContent = entry.animalName;
