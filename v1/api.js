@@ -17,6 +17,8 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
     var table = document.createElement("div");
     table.classList.add("table2_list");
 
+    data.entries.sort((a, b) => new Date(a.raceDate) - new Date(b.raceDate));
+
     data.entries.forEach(entry => {
       var rowDiv = document.createElement("div");
       rowDiv.classList.add("table2_item");
