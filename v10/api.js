@@ -52,7 +52,7 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
       }
 
       var raceCourseCell = document.createElement("div");
-      raceCourseCell.classList.add("table2_column", "is-width-xlarge", "text-weight-light");
+      raceCourseCell.classList.add("table2_column", "is-width-large", "text-weight-light");
       raceCourseCell.textContent = entry.raceCourse;
       rowDiv.appendChild(raceCourseCell);
 
