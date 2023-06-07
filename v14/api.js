@@ -39,7 +39,7 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
       rowDiv.appendChild(raceDateCell);
 
       var horseCell = document.createElement("div");
-      horseCell.classList.add("table2_column", "is-width-large", "text-weight-semibold");
+      horseCell.classList.add("table2_column", "is-width-xlarge", "text-weight-semibold");
       horseCell.textContent = entry.animalName;
       rowDiv.appendChild(horseCell);
 
@@ -62,7 +62,7 @@ fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDay
       rowDiv.appendChild(raceTimeCell);
 
       var raceDetailsCell = document.createElement("div");
-      raceDetailsCell.classList.add("table2_column", "is-width-large", "text-weight-semibold");
+      raceDetailsCell.classList.add("table2_column-no-line", "is-width-large", "text-weight-semibold");
       raceDetailsCell.textContent = entry.raceDetails;
       rowDiv.appendChild(raceDetailsCell);
 
