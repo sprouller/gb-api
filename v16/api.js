@@ -9,7 +9,7 @@ var requestOptions = {
 
 var container = document.getElementById("table");
 
-fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDays=6&resultsMax=40&resultsOffset=0", requestOptions)
+fetch("https://live.bloodstockreports.co.uk/4DCGI/EANDRAPI/RacesForList?entryDays=6&resultsMax=200&resultsOffset=0", requestOptions)
   .then(response => response.json())
   .then(data => {
   console.log(data);
